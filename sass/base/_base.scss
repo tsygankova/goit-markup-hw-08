@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+  }
+  
+  .body{
+    background-color:$background-color;
+    color: $text-main-color;
+    font-family: $main-font;
+    font-size:14px;
+    letter-spacing: 0.03em;
+  }
+  
+  /*ссылки и списки - общие стили*/
+  .link{
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+  }
+  .list{
+    list-style: none;
+    padding:0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px;
+  }
+  
+  h1,h2,h3,p{
+    margin:0px 0px 0px 0px;
+    text-align:center;
+  }
+  
+  h2{
+    margin-bottom:50px;
+  }
+
