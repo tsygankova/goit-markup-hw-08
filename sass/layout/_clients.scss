@@ -1,0 +1,36 @@
+.clients-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .client{
+    display:flex;
+    width:170px;
+    height:90px;
+    border: 1px solid $icon-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+        &:last-child{
+            margin-right: 0px;}
+        
+        &:hover, 
+        &:focus{
+            border-color: $accent-color;}
+  }
+  
+  .client-logo{
+    fill:$icon-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .client:hover &, .client:focus &{
+      fill: $accent-color;}
+    }
