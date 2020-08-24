@@ -1,5 +1,10 @@
 .footer{
     background: $footer-color;}
+
+.contacts-list{
+    margin-bottom:60px;
+    text-align: center;
+}
   
 .footer-address{
     font-style: normal;
@@ -9,15 +14,7 @@
 .footer-contact{
     font-style: normal;
     line-height: 1.71;
-    color: $footer-links-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus{
-        color: $accent-color;}
-}
+    color: $footer-links-color;}
 
 .social-call, .subscription-call{
     padding-top:12px;
@@ -37,20 +34,11 @@
     margin-right: 10px;
 
     .social-list-item{
-    background-color: $footer-social-background;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    .social-icon{
-        fill: $background-color;}
+    background-color: $footer-social-background;}
 
-    &:hover, 
-    &:focus{
-        background-color: $accent-color;}}
-  
-    &:last-child{
-        margin-right: 0px;}
+    .social-icon{
+        fill: $background-color;
+    }
 }
 
     .button{
@@ -68,10 +56,58 @@
     padding-bottom: 18px;
     padding-left: 16px;
     font-size:16px;
-    line-height: 1.25;}
+    line-height: 1.25;
+    margin-top:20px;}
 
 .sendicon{
     width:24px;
     height:24px;
     fill: $hover-buttons-text;
     margin-left: 10px}
+
+@media screen and (min-width: $tablet) and (max-width: $EndTablet){
+ .contacts-social{
+     display:flex;
+     justify-content: space-evenly;
+ }
+
+ .social-footer{
+     display: block;
+     text-align:center;
+ }
+}    
+
+@media screen and (min-width: $desktop){
+    .footer-container{
+        display:flex;
+    }
+
+    .footer-contact{
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus{
+        color: $accent-color;
+}
+
+.social-media{
+    .social-list-item{
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        .social-icon{
+    
+        &:hover, 
+        &:focus{
+            background-color: $accent-color;}
+      
+        &:last-child{
+            margin-right: 0px;}
+}}}}
+
+.subscription-form-container{
+    display: flex;
+}}

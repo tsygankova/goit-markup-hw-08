@@ -133,6 +133,7 @@ span {
   padding: 12px;
   margin-right: 10px;
   border-radius: 50%;
+  background-color: transparent;
 }
 
 .social-icon {
@@ -627,6 +628,11 @@ span {
   background: #2f303A;
 }
 
+.contacts-list {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .footer-address {
   font-style: normal;
   line-height: 1.71;
@@ -637,13 +643,6 @@ span {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contact:hover, .footer-contact:focus {
-  color: #2196F3;
 }
 
 .social-call, .subscription-call {
@@ -667,21 +666,10 @@ span {
 
 .socialmedia .social-list-item {
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialmedia .social-list-item .social-icon {
+.socialmedia .social-icon {
   fill: #ffffff;
-}
-
-.socialmedia .social-list-item:hover, .socialmedia .social-list-item:focus {
-  background-color: #2196F3;
-}
-
-.socialmedia:last-child {
-  margin-right: 0px;
 }
 
 .button {
@@ -701,6 +689,7 @@ span {
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
+  margin-top: 20px;
 }
 
 .sendicon {
@@ -708,6 +697,45 @@ span {
   height: 24px;
   fill: #ffffff;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-social {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social-footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+  .footer-contact {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-contact:hover, .footer-contact:focus {
+    color: #2196F3;
+  }
+  .footer-contact .social-media .social-list-item {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-contact .social-media .social-list-item .social-icon:hover, .footer-contact .social-media .social-list-item .social-icon:focus {
+    background-color: #2196F3;
+  }
+  .footer-contact .social-media .social-list-item .social-icon:last-child {
+    margin-right: 0px;
+  }
+  .subscription-form-container {
+    display: flex;
+  }
 }
 
 .portfolio {
