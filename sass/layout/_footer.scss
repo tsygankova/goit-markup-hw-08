@@ -80,6 +80,7 @@
 @media screen and (min-width: $desktop){
     .footer-container{
         display:flex;
+        align-items: center;}
     }
 
     .footer-contact{
@@ -110,4 +111,17 @@
 
 .subscription-form-container{
     display: flex;
-}}
+    flex-direction: column;
+}
+
+.subscription-line{
+    display: flex;
+    align-items: center;}
+
+.subscription-call{
+    margin-bottom: 0px;
+    }
+
+    .button{
+        margin-left: 26px;
+    }

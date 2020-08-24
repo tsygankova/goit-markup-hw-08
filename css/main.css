@@ -384,6 +384,26 @@ span {
   }
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .hero {
   background-color: #ffffff;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
@@ -713,29 +733,50 @@ span {
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+    align-items: center;
   }
-  .footer-contact {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer-contact:hover, .footer-contact:focus {
-    color: #2196F3;
-  }
-  .footer-contact .social-media .social-list-item {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer-contact .social-media .social-list-item .social-icon:hover, .footer-contact .social-media .social-list-item .social-icon:focus {
-    background-color: #2196F3;
-  }
-  .footer-contact .social-media .social-list-item .social-icon:last-child {
-    margin-right: 0px;
-  }
-  .subscription-form-container {
-    display: flex;
-  }
+}
+
+.footer-contact {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contact:hover, .footer-contact:focus {
+  color: #2196F3;
+}
+
+.footer-contact .social-media .social-list-item {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contact .social-media .social-list-item .social-icon:hover, .footer-contact .social-media .social-list-item .social-icon:focus {
+  background-color: #2196F3;
+}
+
+.footer-contact .social-media .social-list-item .social-icon:last-child {
+  margin-right: 0px;
+}
+
+.subscription-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription-line {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-call {
+  margin-bottom: 0px;
+}
+
+.button {
+  margin-left: 26px;
 }
 
 .portfolio {
