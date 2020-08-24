@@ -4,6 +4,7 @@
   }
   
   .team-member{
+    display: block;
     background: $background-color;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
@@ -42,23 +43,3 @@
     justify-content: space-evenly;
     align-items: center;
   }
-
-@media screen and (min-width: 768px){
-      .team{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;}
-
-      .team-member{
-          margin-right: 30px;
-          margin-bottom: 30px;
-
-          &:nth-child(2n){
-              margin-right: 0px;}
-
-          &:nth-last-child(-n+2){
-              margin-bottom: 0px;}}}   
-
-@media screen and (min-width: 1200px){
-
-}

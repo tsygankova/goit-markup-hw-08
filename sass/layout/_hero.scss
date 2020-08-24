@@ -1,6 +1,5 @@
 
 .hero{
-    text-align:center;
     background-color: $background-color;
     background-image: linear-gradient(
       to bottom,
@@ -9,10 +8,12 @@
        url(../images/Header.jpg);   
     background-repeat: no-repeat;
     background-position: center;
-    margin: auto;
+   padding: 118px 60px 118px 60px;
   }
   
   .hero-title{
+    display: block;
+    text-align:center; 
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -20,32 +21,3 @@
     margin: auto;
     margin-bottom: 30px;
   }
-
-@media screen and (max-width: 767px){
-    .hero{
-        padding: 118px 60px 118px 60px;
-    }
-}  
-
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    .hero-title{
-        font-size: 26px;
-        line-height: 1.62;        
-}
-
-.hero{
-    padding: 118px 204px 118px 204px;
-}}
-
-@media screen and (min-width: 1200px){
-    .hero-title{
-        font-size: 44px;
-        line-height: 1.36;
-}
-
-.hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    max-height: 600px;
-}}
