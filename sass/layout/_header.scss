@@ -16,17 +16,25 @@
     width: 100%;
     background-color: $background-color;
     position: absolute;
-    top: 60px;
+    top: 123%;
     right: 0;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 3px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.navigation{
+    margin-bottom: 60px;
 }
 
 .menu-item{
 position: relative;
 margin-bottom: 40px;
+
+&:last-child{
+    margin-bottom: 0px;
+}
 
 &::after{
     position: relative;
