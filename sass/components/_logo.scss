@@ -1,17 +1,22 @@
-.logo, .footer-logo{
+.logo{
     font-family: $secondary-font;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 1.17;
-  }
-  .logo{
     color: $title-light-theme-color;
+
+    @media screen and (max-width: $EndTablet){
+      font-size: 24px;
+      line-height: 1.17;
+    }
+
+    @media screen and (min-width: $desktop){
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
+
+  span{color: $logo-color;}
 
   .footer-logo {
     display:block;
     margin-bottom:20px;
-    color: #ffffff;
-      }
-  
-  span{color: $logo-color;}
+    color: #ffffff;}

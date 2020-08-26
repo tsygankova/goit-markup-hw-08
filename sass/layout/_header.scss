@@ -1,18 +1,96 @@
-.menu-button{
-    display: inline-flex;
-    margin: 0px;
-    padding: 0px;
-    border: none;
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid $portfolio-border-color;
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu-wrapper{
+    width: 100%;
+    background-color: $background-color;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-item{
+position: relative;
+margin-bottom: 40px;
+
+&::after{
+    position: relative;
+    display:block;
+    content:"";
+    width: 100%;
+    height:4px;
     background-color: transparent;
+    border-radius: 2px;
+    top:8px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
-    .icon-cross{
-        display: none;
-    }}
-    .menu-button.is-open .icon-cross{
-        display:block;
+&:hover::after{
+    background-color: $accent-color;}
+}
+
+.menu-item-link{
+    color: $title-light-theme-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+      color: $accent-color;}
     }
+.header-contact-item{
+   
+    &:first-child{
+        margin-bottom: 16px;}
+}
 
-    .menu-button.is-open .icon-menu{
-        display:none;
-    }
+.header-contact-link{
+    color: $text-main-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus{
+      color: $accent-color;}
+    
+    .email-icon, .phone-icon{
+        fill: currentColor;
+        margin-right:10px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+      
+        
+    &:hover .email-icon,
+    &:hover .phone-icon{
+      fill: $accent-color;}}
+
+   

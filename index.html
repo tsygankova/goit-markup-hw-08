@@ -13,71 +13,70 @@
   <body class = "body">
 
     <!--ШАПКА САЙТА-->
-    <header class = "page-header">
-      <div class = "header">
-      <nav class = "navigation">
+    <header class = "header">
+      <div class = "header-container container">
         <a class = "logo link" href = "index.html" lang = "en"><span>Web</span> Studio</a>
-        <button class = "menu-button is-open" type = "button" data-menu-button>
+        <button class = "menu-button is-open" type = "button" data-menu-button aria-expanded = "false" aria-controls="menu-wrapper">
           <svg width = "40" height = "40" aria-label = "Переключатель мобильного меню">
             <use class = "icon-cross" href = "./images/sprite.svg#icon-close-black"></use>
             <use class = "icon-menu" href = "./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-         <ul class = "list menu">
-           <li class = "menu-item">
-            <div class = "menu-item-container">
-            <a class = "menu-item-link link" href = "./index.html">Студия</a>
-            </div>  
-          </li>
-
-          <li class = "menu-item">
-            <div class = "menu-item-container">
-            <a class = "menu-item-link link" href = "./portfolio.html">Портфолио</a>
-            </div>  
-          </li>
-    
-          <li class = "menu-item">
-            <div class = "menu-item-container">
-            <a class = "menu-item-link link " href = "">Контакты</a>
-            </div>
-          </li>
-
-        </ul>
-      </nav>
-
-      <ul class = "list header-contacts">
-
-        <li class = "header-contact-item">
-          <a class = "header-contact-link link" href = "mailto:info@devstudio.com">
-            <svg class = "email-icon" width = "16" height = "12">
-              <use href = "./images/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        
-        <li class = "header-contact-item">
-          <a class = "header-contact-link link" href = "tel:+380961111111">
-            <svg class = "phone-icon" width = "10" height = "15">
-              <use href = "./images/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a></li>
-      </ul>
-    </div>
+        <div class = "menu-wrapper">
+          <nav class = "navigation">
+            <ul class = "list menu">
+              <li class = "menu-item">
+               <div class = "menu-item-container">
+               <a class = "menu-item-link link" href = "./index.html">Студия</a>
+               </div>  
+             </li>
+   
+             <li class = "menu-item">
+               <div class = "menu-item-container">
+               <a class = "menu-item-link link" href = "./portfolio.html">Портфолио</a>
+               </div>  
+             </li>
+       
+             <li class = "menu-item">
+               <div class = "menu-item-container">
+               <a class = "menu-item-link link " href = "">Контакты</a>
+               </div>
+             </li>
+           </ul>
+         </nav>
+         <ul class = "list header-contacts">
+           <li class = "header-contact-item">
+             <a class = "header-contact-link link" href = "mailto:info@devstudio.com">
+               <svg class = "email-icon" width = "16" height = "12">
+                 <use href = "./images/sprite.svg#icon-envelope"></use>
+               </svg>
+               info@devstudio.com
+             </a>
+           </li>
+           
+           <li class = "header-contact-item">
+             <a class = "header-contact-link link" href = "tel:+380961111111">
+               <svg class = "phone-icon" width = "10" height = "15">
+                 <use href = "./images/sprite.svg#icon-smartphone"></use>
+               </svg>
+               +38 096 111 11 11
+             </a></li>
+         </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      <!--ГЕРОЙ-->
-      <section class = "hero">
+      <!-- ГЕРОЙ -->
+      <!-- <section class = "hero">
           <div class = "hero-container">
           <h1 class = "hero-title">Эффективные решения<br> для вашего бизнеса</h1>
           <button data-modal-open class = "button" type = "button">Заказать услугу</button>
         </div>
       </section>
-      
+       -->
       <!--ФИЧИ-->
-      <section class = "features-section section">
+      <!-- <section class = "features-section section">
         <div>
           <h2 hidden>Особенности</h2>
           <ul class = "list features">
@@ -99,10 +98,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--НАПРАВЛЕНИЯ БИЗНЕСА-->
-      <section class = "business section">
+      <!-- <section class = "business section">
         <div>
           <h2 class = "title">Чем мы занимаемся</h2>
           <ul class = "list business-item-container">
@@ -120,10 +119,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--КОМАНДА-->
-      <section class = "team-section section">
+      <!-- <section class = "team-section section">
         <div>
           <h2 class = "title">Наша команда</h2>
           <ul class = "list team">
@@ -273,8 +272,8 @@
        </div>
       </section>
 
-     <!--КЛИЕНТЫ-->
-      <section class = "clients-section section">
+     КЛИЕНТЫ-->
+      <!-- <section class = "clients-section section">
         <div class = "container">
           <h2 class = "title">Постоянные клиенты</h2>
           <ul class = "list clients-container">
@@ -342,17 +341,17 @@
     <footer class = "footer section">
       <div class = "footer-container container">
         <div class = "contacts social">
-        <!--ФУТЕР КОНТАКТЫ-->
+        ФУТЕР КОНТАКТЫ
         <div class = "contacts">
           <ul class = "contacts-list list">
-            <li><a class = "footer-logo link" lang = "en" href = "index.html"><span>Web</span> Studio</a></li>
+            <li><a class = "footer-logo logo link" lang = "en" href = "index.html"><span>Web</span> Studio</a></li>
             <li><address class = "footer-address" >г.Киев, пр-т Леси Украинки 26</address></li>
             <li><address><a class = "footer-contact link" href = "mailto:info@example.com">info@example.com</a></address></li>
             <li><address><a class = " footer-contact link" href = "tel:+380991111111"> +380 99 111 11 11 </a></address></li>
         </ul>
         </div>
 
-        <!-- ФУТЕР СОЦСЕТИ-->
+        <!-- ФУТЕР СОЦСЕТИ
         <div class = "social-footer">
           <p class = "social-call"><b>Присоединяйтесь</b></p>
           <ul class = "list social-footer-list">
@@ -394,7 +393,7 @@
         </div>
 
         <!--ФУТЕР ФОРМА РЕГИСТРАЦИИ-->
-        <form class = "subscription-form">
+        <!-- <form class = "subscription-form">
           <div class = "subscription-form-container">
             <label class = "subscription-call" for = "email">Подпишитесь на рассылку</label>
             <div class = "subscription-line">
@@ -409,7 +408,7 @@
         </form>
 
       </div>
-    </footer>
+    </footer> -->
 
     <!--МОДАЛЬНОЕ ОКНО-->
     <div data-modal class = "backdrop is-hidden">
@@ -473,8 +472,8 @@
 
       </form> 
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div>  -->
+    <script src="./js/modal.js"></script> 
   </body>
 
 </html>
