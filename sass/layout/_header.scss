@@ -3,10 +3,10 @@
     padding-bottom: 10px;
     border: 1px solid $portfolio-border-color;
 
-    @media screen and (min-width: $tablet){
-        padding-top: 21px;
-        padding-bottom: 21px;
-        border: none;}
+    // @media screen and (min-width: $tablet){
+    //     padding-top: 21px;
+    //     padding-bottom: 21px;
+    //     border: none;}
 }
 
 .header-container{
@@ -16,7 +16,10 @@
     justify-content: space-between;
     align-items: baseline;
     position: relative;
-    outline: 1px black;
+
+    // @media screen and (min-width: $tablet){
+    //     position: static;
+    // }
 }
 
 .menu-wrapper{
@@ -34,15 +37,15 @@
     &.is-open{
         display: block;}}
     
-@media screen and (min-width: $tablet){
-    .menu-wrapper{
-    position: static;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 21px;
-    padding-bottom:21px;
-    box-shadow: none;
-    }}
+// @media screen and (min-width: $tablet){
+//     .menu-wrapper{
+//     position: static;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-top: 21px;
+//     padding-bottom:21px;
+//     box-shadow: none;
+//     }}
 
 .menu-btn{
     position:relative;
@@ -51,8 +54,8 @@
     background-color: transparent;
     border: none;
 
-    @media screen and (min-width: $tablet){
-    display: none;}
+    // @media screen and (min-width: $tablet){
+    // display: none;}
 
     .icon-close{
         display: none;
@@ -79,23 +82,23 @@
 .navigation{
     margin-bottom: 60px;
 
-    @media screen and (min-width: $tablet){
-        display: inline-flex;
-        margin-bottom: 0px;}}
+//     @media screen and (min-width: $tablet){
+//         display: inline-flex;
+//         margin-bottom: 0px;}}
 
-.menu{
-    @media screen and (min-width: $tablet){
-        display: flex;}}
+// .menu{
+//     @media screen and (min-width: $tablet){
+//         display: flex;}}
 
 .menu-item{
 margin-bottom: 40px;
 &:last-child{
     margin-bottom: 0px;}}
 
-@media screen and (min-width: $tablet){
-.menu-item {
-    margin-right: 0px;
-    margin-bottom: 0px;}
+// @media screen and (min-width: $tablet){
+// .menu-item {
+//     margin-right: 0px;
+//     margin-bottom: 0px;}
 
 &:last-child{
     margin-right: 0px;}}
@@ -132,24 +135,21 @@ margin-bottom: 40px;
     
         &:hover::after{
         background-color: $accent-color;}
+}
 
-        @media screen and (min-width: $tablet){
-            font-size: 14px;
-}}
-
-@media screen and (min-width: $tablet){
-    .header-contacts{
-        display: inline-flex;
-        flex-direction: column;}}
+// @media screen and (min-width: $tablet){
+//     .header-contacts{
+//         display: inline-flex;
+//         flex-direction: column;}}
 
 .header-contact-item{
    
     &:first-child{
         margin-bottom: 16px;}
 
-    @media screen and (min-width: $tablet) and (max-width: $EndTablet){
-        margin-bottom: 10px;
-        }
+    // @media screen and (min-width: $tablet) and (max-width: $EndTablet){
+    //     margin-bottom: 10px;
+    //     }
 }
 
 .header-contact-link{
@@ -179,6 +179,7 @@ margin-bottom: 40px;
     &:hover .phone-icon{
       fill: $accent-color;}
     
-      @media screen and (min-width: $tablet){
-        font-size: 12px;
-    }}
+    //   @media screen and (min-width: $tablet){
+    //     font-size: 12px;
+    // }
+}
