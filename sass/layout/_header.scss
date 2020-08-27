@@ -12,6 +12,7 @@
 }
 
 .menu-wrapper{
+    display: none;
     width: 100%;
     background-color: $background-color;
     position: absolute;
@@ -23,7 +24,11 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 3px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.menu-button{
+.menu-wrapper.is-open{
+    display: block;
+}
+
+.menu-btn{
     position:relative;
     z-index: 100;
 
@@ -38,8 +43,6 @@
             display:block;}
         .icon-menu{
             display: none;}}}
-
-
 
 .icon-close, .icon-close{
     fill: $title-light-theme-color;
