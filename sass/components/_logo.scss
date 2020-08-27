@@ -1,20 +1,23 @@
-span{color: $logo-color;}
+
 
 .logo{
     font-family: $secondary-font;
     font-weight: bold;
     color: $title-light-theme-color;
 
+    span{color: $logo-color;}
+
     @media screen and (max-width: $EndTablet){
       font-size: 24px;
       line-height: 1.17;
     }
 
-    @media screen and (min-width: $Tablet){
-      margin-right: 84px;
-    }
+    // @media screen and (min-width: $tablet){
+    //   margin-right: 84px;
+    // }
 
     @media screen and (min-width: $desktop){
+      display: inline-block;
       font-size: 26px;
       line-height: 1.19;
     }}

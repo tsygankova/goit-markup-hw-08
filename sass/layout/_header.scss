@@ -1,51 +1,50 @@
 .header{
-    padding-top: 10px;
-    padding-bottom: 10px;
     border: 1px solid $portfolio-border-color;
 
-    // @media screen and (min-width: $tablet){
-    //     padding-top: 21px;
-    //     padding-bottom: 21px;
-    //     border: none;}
+    @media screen and (min-width: $tablet){
+        border: none;}
 }
 
 .header-container{
     display: flex;
     margin-left: 0 auto;
     margin-right: 0 auto;
+    padding-top:10px;
+    padding-bottom:10px;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     position: relative;
 
-    // @media screen and (min-width: $tablet){
-    //     position: static;
-    // }
+    @media screen and (min-width: $tablet){
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
 }
 
 .menu-wrapper{
-    display:none;
     width: 100%;
     background-color: $background-color;
     position: absolute;
-    top: 123%;
+    top: 100%;
     right: 0;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 3px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    transform: translateY (-100%);
+    transition: transform 200ms linear;
 
     &.is-open{
-        display: block;}}
+    transform: translateY(0);}}
     
-// @media screen and (min-width: $tablet){
-//     .menu-wrapper{
-//     position: static;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding-top: 21px;
-//     padding-bottom:21px;
-//     box-shadow: none;
-//     }}
+@media screen and (min-width: $tablet){
+    .menu-wrapper{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom:0px;
+    }}
 
 .menu-btn{
     position:relative;
@@ -54,8 +53,8 @@
     background-color: transparent;
     border: none;
 
-    // @media screen and (min-width: $tablet){
-    // display: none;}
+    @media screen and (min-width: $tablet){
+    display: none;}
 
     .icon-close{
         display: none;
@@ -82,23 +81,25 @@
 .navigation{
     margin-bottom: 60px;
 
-//     @media screen and (min-width: $tablet){
-//         display: inline-flex;
-//         margin-bottom: 0px;}}
+    @media screen and (min-width: $tablet){
+        display: inline-flex;
+        margin-bottom: 0px;}}
 
-// .menu{
-//     @media screen and (min-width: $tablet){
-//         display: flex;}}
+.menu{
+    @media screen and (min-width: $tablet){
+        display: flex;
+    align-items: center;}}
 
 .menu-item{
 margin-bottom: 40px;
 &:last-child{
     margin-bottom: 0px;}}
 
-// @media screen and (min-width: $tablet){
-// .menu-item {
-//     margin-right: 0px;
-//     margin-bottom: 0px;}
+@media screen and (min-width: $tablet){
+.menu-item {
+    margin-right: 50px;
+    margin-top: 32px;
+    margin-bottom: 32px;}
 
 &:last-child{
     margin-right: 0px;}}
@@ -137,19 +138,26 @@ margin-bottom: 40px;
         background-color: $accent-color;}
 }
 
-// @media screen and (min-width: $tablet){
-//     .header-contacts{
-//         display: inline-flex;
-//         flex-direction: column;}}
+@media screen and (min-width:$tablet){
+    .menu-item-link::after{
+        top:32px;
+    }
+}
+
+@media screen and (min-width: $tablet){
+    .header-contacts{
+        display: inline-flex;
+        flex-direction: column;}}
 
 .header-contact-item{
    
     &:first-child{
         margin-bottom: 16px;}
 
-    // @media screen and (min-width: $tablet) and (max-width: $EndTablet){
-    //     margin-bottom: 10px;
-    //     }
+    @media screen and (min-width: $tablet) and (max-width: $EndTablet){
+        margin-bottom: 10px;
+        margin-left: 0px;
+        }
 }
 
 .header-contact-link{
@@ -179,7 +187,7 @@ margin-bottom: 40px;
     &:hover .phone-icon{
       fill: $accent-color;}
     
-    //   @media screen and (min-width: $tablet){
-    //     font-size: 12px;
-    // }
+      @media screen and (min-width: $tablet){
+        font-size: 12px;
+    }
 }
