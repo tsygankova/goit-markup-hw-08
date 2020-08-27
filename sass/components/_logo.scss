@@ -1,3 +1,5 @@
+span{color: $logo-color;}
+
 .logo{
     font-family: $secondary-font;
     font-weight: bold;
@@ -8,13 +10,16 @@
       line-height: 1.17;
     }
 
+    @media screen and (min-width: $Tablet){
+      margin-right: 84px;
+    }
+
     @media screen and (min-width: $desktop){
       font-size: 26px;
       line-height: 1.19;
-    }
-  }
+    }}
 
-  span{color: $logo-color;}
+
 
   .footer-logo {
     display:block;

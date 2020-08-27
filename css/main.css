@@ -75,6 +75,10 @@ h2 {
   padding-top: 60px;
 }
 
+span {
+  color: #2196F3;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -93,10 +97,6 @@ h2 {
     font-size: 26px;
     line-height: 1.19;
   }
-}
-
-span {
-  color: #2196F3;
 }
 
 .footer-logo {
@@ -400,11 +400,22 @@ span {
   border: 1px solid #ECECEC;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border: none;
+  }
+}
+
 .header-container {
   display: flex;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   position: relative;
+  outline: 1px black;
 }
 
 .menu-wrapper {
@@ -424,6 +435,17 @@ span {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-wrapper {
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    box-shadow: none;
+  }
+}
+
 .menu-btn {
   position: relative;
   z-index: 100;
@@ -437,7 +459,11 @@ span {
   }
 }
 
-.menu-btn.is-open .icon-cross {
+.menu-btn .icon-close {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close {
   display: block;
 }
 
@@ -462,12 +488,36 @@ span {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: inline-flex;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .menu-item {
   margin-bottom: 40px;
 }
 
 .menu-item:last-child {
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  :last-child {
+    margin-right: 0px;
+  }
 }
 
 .menu-item-link {
@@ -496,7 +546,7 @@ span {
   height: 4px;
   background-color: transparent;
   border-radius: 2px;
-  top: 8px;
+  top: 32px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -506,8 +556,27 @@ span {
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-item-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+
 .header-contact-item:first-child {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact-item {
+    margin-bottom: 10px;
+  }
 }
 
 .header-contact-link {
@@ -537,6 +606,12 @@ span {
 .header-contact-link:hover .email-icon,
 .header-contact-link:hover .phone-icon {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact-link {
+    font-size: 12px;
+  }
 }
 
 .hero {
