@@ -440,15 +440,16 @@ span {
   display: none;
 }
 
-.icon-cross, .icon-menu {
-  color: #212121;
-  transition-property: color;
+.icon-close, .icon-close {
+  fill: #212121;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-menu:focus, .icon-menu:hover {
-  color: #2196F3;
+.icon-menu:focus, .icon-menu:hover,
+.icon-close:focus, .icon-close:hover {
+  fill: #2196F3;
   cursor: pointer;
 }
 

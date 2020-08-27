@@ -2,7 +2,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid $portfolio-border-color;
-
 }
 
 .header-container{
@@ -42,14 +41,15 @@
 
 
 
-.icon-cross, .icon-menu{
-    color: $title-light-theme-color;
-    transition-property: color;
+.icon-close, .icon-close{
+    fill: $title-light-theme-color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
-.icon-menu:focus, .icon-menu:hover{
-        color: $accent-color;
+.icon-menu:focus, .icon-menu:hover,
+.icon-close:focus, .icon-close:hover{
+        fill: $accent-color;
         cursor: pointer;
     }
 
