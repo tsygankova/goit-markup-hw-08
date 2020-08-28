@@ -6,6 +6,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
+    overflow-y: scroll;
   }
   
   .is-hidden{
@@ -15,10 +16,6 @@
   }
   
   .form-section{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -30%);
     margin-left: 15px;
     margin-right: 15px;
     display: block;
@@ -195,7 +192,6 @@
   .checkbox-label{
     display: flex;
     align-items:center;
-    font-size: 14px;
   }
   
   .icon-check{
@@ -217,11 +213,6 @@
   border-color: $accent-color;
   }
   
-  .terms{
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  
   .terms-link{
     padding-left: 5px;
     color:$accent-color;
@@ -231,12 +222,36 @@
     display: block;
   }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: $EndTablet){
     .form-section{
-        width: 450px;
-}}
+        width: 450px;}
+      
+    .checkbox-label{
+      font-size: 10px;
+      line-height: 1.66;
+    }
+  
+    .terms{
+      font-size: 10px;
+      line-height: 1.66;
+    }}
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: $desktop){
+
     .form-section{
         width: 528px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+  
+    .checkbox-label{
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  
+    .terms{
+      font-size: 14px;
+      line-height: 1.71;
     }}  

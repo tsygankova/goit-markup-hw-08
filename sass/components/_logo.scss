@@ -12,9 +12,10 @@
       line-height: 1.17;
     }
 
-    // @media screen and (min-width: $tablet){
-    //   margin-right: 84px;
-    // }
+    @media screen and (min-width: $tablet){
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
 
     @media screen and (min-width: $desktop){
       display: inline-block;
