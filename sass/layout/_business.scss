@@ -1,8 +1,7 @@
 .business{
-  @media screen and (max-width:$EndTablet){
+  @media screen and (max-width: $EndTablet){
     display: none;
-  }
-}
+  }}
 
 @media screen and (min-width:$desktop){
   .business{
