@@ -663,11 +663,11 @@ h2 {
 }
 
 .features-item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/features/antenna.svg);
 }
 
 .features-item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/features/clock.svg);
 }
 
 .features-item:nth-child(3)::before {

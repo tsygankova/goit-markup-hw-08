@@ -20,20 +20,20 @@
         border-radius: 4px;}
   
     &:nth-child(1)::before{
-    background-image: url(../images/antenna.svg)}
+    background-image: url(../images/features/antenna.svg)}
   
     &:nth-child(2)::before{
-    background-image: url(../images/clock.svg);}
+    background-image: url(../images/features/clock.svg);}
   
     &:nth-child(3)::before{
-    background-image: url(../images/diagram.svg);}
+    background-image: url(../images/features/diagram.svg);}
   
     &:last-child{
     margin-right: 0px;
     margin-bottom: 0px;}
   
     &:last-child::before{
-    background-image: url(../images/astronaut.svg);}}
+    background-image: url(../images/features/astronaut.svg);}}
   
   .features-item-title{
     font-size: 14px;
