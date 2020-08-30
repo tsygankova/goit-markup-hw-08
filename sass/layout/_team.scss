@@ -22,14 +22,16 @@
       margin-bottom: 30px;
 
       &.last-child{
-        margin-bottom: 0px;
-      }
-    }
-  
-    @media screen and (min-width: $tablet) and (max-width: $EndTablet){
-    width: 354px;
+        margin-bottom: 0px;}}
     
-  }
+  
+     @media screen and (min-width: $tablet) and (max-width: $EndTablet){
+    width: 354px;
+    margin-bottom: 30px;
+
+    &:nth-child(-n+2){
+      margin-bottom: 0px;
+    }}
 
   @media screen and (min-width: $desktop){
   width: 270px;
@@ -50,13 +52,11 @@ display: flex;
 flex-wrap: nowrap;
 }}
 
-    // &.last-child{
-    //     margin-right: 0px;}}
+.social{
+  display: flex;
+  justify-content: center;
+}
   
-  
-  .team-member-image{
-    margin-bottom:30px;
-  }
   .team-member-title, 
   .team-member-text{
     font-size: 16px;
@@ -66,17 +66,11 @@ flex-wrap: nowrap;
   
   .team-member-title{
     font-weight: 500;
-    text-align: center;
     color: $title-light-theme-color;
+    margin-top: 30px;
     margin-bottom: 10px;
   }
   
   .team-member-text{
     margin-bottom:16px;
-  }
-  
-  .social{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }

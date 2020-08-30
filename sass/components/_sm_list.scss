@@ -5,9 +5,23 @@
     padding:12px;
     margin-right: 10px;
     border-radius: 50%;
-    background-color: transparent;}
+    background-color: transparent;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover, 
+      &:focus{
+          background-color: $accent-color;}}
   
   .social-icon{
     width: 20px;
     height: 20px;
-    fill: $icon-color;}
+    fill: $icon-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      .social-list-item:hover &,
+      .social-list-item:focus &{
+          fill: $title-dark-theme-color;}}
