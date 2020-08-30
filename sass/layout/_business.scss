@@ -1,7 +1,8 @@
 .business{
+
   @media screen and (max-width: $EndTablet){
     display: none;
-  }}
+  }
 
 @media screen and (min-width:$desktop){
   .business{
@@ -36,5 +37,4 @@
  
     &.last-child{
         margin-right:0px;}
- }
-}
+ }}}

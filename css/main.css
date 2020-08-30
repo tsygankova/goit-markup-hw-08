@@ -759,10 +759,10 @@ h2 {
 }
 
 @media screen and (min-width: 1200px) {
-  .business {
+  .business .business {
     padding-top: 0px;
   }
-  .business-item-title {
+  .business .business-item-title {
     font-weight: bold;
     line-height: 1.14;
     text-transform: uppercase;
@@ -776,16 +776,16 @@ h2 {
     bottom: 0;
     left: 0;
   }
-  .business-item-container {
+  .business .business-item-container {
     display: flex;
     align-items: stretch;
   }
-  .business-item {
+  .business .business-item {
     width: 370px;
     margin-right: 30px;
     position: relative;
   }
-  .business-item.last-child {
+  .business .business-item.last-child {
     margin-right: 0px;
   }
 }
@@ -950,26 +950,26 @@ h2 {
   margin-bottom: 60px;
 }
 
-.socialmedia {
+.socialmedia:not(:last-child) {
   margin-right: 10px;
 }
 
-.socialmedia .social-list-item {
+.social-list-item {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialmedia .social-list-item:hover, .socialmedia .social-list-item:focus {
+.social-list-item:hover, .social-list-item:focus {
   background-color: #2196F3;
 }
 
-.socialmedia .social-list-item:last-child {
+.social-list-item:last-child {
   margin-right: 0px;
 }
 
-.socialmedia .social-list-item .social-icon {
+.social-list-item .social-icon {
   fill: #ffffff;
 }
 
@@ -1008,6 +1008,53 @@ h2 {
 
 .subscription-call {
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-and-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contacts-and-social .footer-logo {
+    padding-top: 0px;
+  }
+  .subscription-form-container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .contacts {
+    margin-right: 69px;
+  }
+  .contacts .footer-logo {
+    padding-bottom: 0px;
+  }
+  .subscription-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .subscription-line {
+    display: flex;
+    align-items: center;
+  }
+  .subscription-line .subscription-call-form {
+    width: 358px;
+  }
+  .subscription-line .button {
+    margin-left: 26px;
+    margin-top: 20px;
+  }
 }
 
 .portfolio {
