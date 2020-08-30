@@ -37,10 +37,19 @@
   @media screen and (max-width: 767px){
     .filters{
       justify-content: flex-start;
-      margin-bottom: 25px;}
+      margin-bottom: 25px;}}
+    
+    @media screen and (min-width: $tablet){
+      .filters{
+        justify-content: center;
+      }
+
+    @media screen and (min-width: $desktop){
+     
+    }
+  
   
   }}}
-  
   
   /*portolio items*/
   
