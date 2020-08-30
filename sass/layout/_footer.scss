@@ -1,5 +1,8 @@
 .footer{
-    background: $footer-color;}
+    background: $footer-color;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .contacts-list{
     margin-bottom:60px;
@@ -110,6 +113,12 @@
     }}
 
 @media screen and (min-width: $desktop){
+
+.footer{
+    max-width: 1200px;
+    display: flex;
+}
+
  .footer-container{
      display: flex;
      align-items: flex-start;
