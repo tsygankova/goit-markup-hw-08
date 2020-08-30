@@ -4,37 +4,43 @@
   
   .filters{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
   }
-  
+
   .filter-container{
     margin-right: 8px;
-  
+
     &.last-child{
-        margin-right:0px;}
-  }
+      margin-right:0px;}
+
+      .filter{
+        color: $title-light-theme-color;
+        padding: 6px 22px;
+        border:transparent;
+        border-radius:4px;
+        background-color: $section-color;
+        transition-property: color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 15px;
+      
+        &:hover, 
+        &:focus{
+            color: $hover-buttons-text;
+            background-color: $portfolio-color;}
+
+  @media screen and (max-width: 767px){
+    .filters{
+      justify-content: flex-start;
+      margin-bottom: 25px;}
   
-  .filter{
-    color: $title-light-theme-color;
-    padding: 6px 22px;
-    border:transparent;
-    border-radius:4px;
-    background-color: $section-color;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
+  }}}
   
-    &:hover, 
-    &:focus{
-        color: $hover-buttons-text;
-        background-color: $portfolio-color;}
-  }
   
   /*portolio items*/
   

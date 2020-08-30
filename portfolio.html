@@ -13,46 +13,55 @@
     <!--ШАПКА САЙТА-->
     <header class = "header">
       <div class = "header-container container">
-      <nav class = "navigation">
         <a class = "logo link" href = "index.html" lang = "en"><span>Web</span> Studio</a>
-        
-        <ul class = "list menu-container">
-          
-          <li class = "menu-item">
-            <a class = "menu-item-link link" href = "./index.html">Студия</a>
-          </li>
-          
-          <li class = "menu-item">
-            <a class = "menu-item-link link" href = "./portfolio.html">Портфолио</a>
-          </li>
-          
-          <li class = "menu-item">
-            <a class = "menu-item-link link " href = "">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class = "list header-contacts">
-
-        <li class = "header-contact">
-          <a class = "header-contact-link link" href = "mailto:info@devstudio.com">
-            <svg class = "email-icon" width = "16" height = "12">
-              <use href = "./images/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-
-        <li class = "header-contact">
-          <a class = "header-contact-link link" href = "tel:+380961111111">
-            <svg class = "phone-icon" width = "10" height = "15">
-              <use href = "./images/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a></li>
-      </ul>
-      
-    </div>
+        <button class = "menu-btn" type = "button" data-menu-button aria-expanded = "false" aria-controls="menu-wrapper">
+          <svg width = "40" height = "40" aria-label = "Переключатель мобильного меню">
+            <use class = "icon-menu" href = "./images/sprite.svg#icon-menu"></use>
+            <use class = "icon-close" href = "./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class = "menu-wrapper" data-menu id="menu-wrapper">
+          <nav class = "navigation">
+            <ul class = "list menu">
+              <li class = "menu-item">
+               <div class = "menu-item-container">
+               <a class = "menu-item-link link" href = "./index.html">Студия</a>
+               </div>  
+             </li>
+   
+             <li class = "menu-item">
+               <div class = "menu-item-container">
+               <a class = "menu-item-link link" href = "./portfolio.html">Портфолио</a>
+               </div>  
+             </li>
+       
+             <li class = "menu-item">
+               <div class = "menu-item-container">
+               <a class = "menu-item-link link " href = "">Контакты</a>
+               </div>
+             </li>
+           </ul>
+         </nav>
+         <ul class = "list header-contacts">
+           <li class = "header-contact-item">
+             <a class = "header-contact-link link" href = "mailto:info@devstudio.com">
+               <svg class = "email-icon" width = "16" height = "12">
+                 <use href = "./images/sprite.svg#icon-envelope"></use>
+               </svg>
+               info@devstudio.com
+             </a>
+           </li>
+           
+           <li class = "header-contact-item">
+             <a class = "header-contact-link link" href = "tel:+380961111111">
+               <svg class = "phone-icon" width = "10" height = "15">
+                 <use href = "./images/sprite.svg#icon-smartphone"></use>
+               </svg>
+               +38 096 111 11 11
+             </a></li>
+         </ul>
+        </div>
+      </div>
     </header>
 
     <main>

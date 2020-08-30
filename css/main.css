@@ -1160,8 +1160,7 @@ h2 {
 
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .filter-container {
@@ -1172,7 +1171,7 @@ h2 {
   margin-right: 0px;
 }
 
-.filter {
+.filter-container .filter {
   color: #212121;
   padding: 6px 22px;
   border: transparent;
@@ -1186,11 +1185,19 @@ h2 {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 15px;
 }
 
-.filter:hover, .filter:focus {
+.filter-container .filter:hover, .filter-container .filter:focus {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
+}
+
+@media screen and (max-width: 767px) {
+  .filter-container .filter .filters {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
 }
 
 /*portolio items*/
