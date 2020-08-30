@@ -845,11 +845,23 @@ h2 {
 .clients-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.client-logo {
+  fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client:hover .client-logo,
+.client:focus .client-logo {
+  fill: #2196F3;
 }
 
 .client {
   display: flex;
-  width: calc((100%/2)-30px);
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -868,45 +880,27 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .client .client-container {
-    flex-wrap: wrap;
+  .client {
+    width: 210px;
   }
-  .client .client {
-    max-width: 210px;
-  }
-  .client .client:nth-last-child(-n+2) {
+  .client:nth-last-child(-n+2) {
     margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .client .client {
+  .client {
     width: 226px;
   }
-  .client .client:nth-last-child(-n+3) {
+  .client:nth-last-child(-n+3) {
     margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .client .clients-container {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-  .client .client {
+  .client {
     width: 170px;
   }
-}
-
-.client-logo {
-  fill: #AFB1B8;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client:hover .client-logo, .client:focus .client-logo {
-  fill: #2196F3;
 }
 
 .footer {
@@ -924,10 +918,21 @@ h2 {
   color: #ffffff;
 }
 
+.address-wrapper:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .footer-contact {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contact:hover, .footer-contact:focus {
+  color: #2196F3;
 }
 
 .social-call, .subscription-call {
@@ -951,19 +956,38 @@ h2 {
 
 .socialmedia .social-list-item {
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialmedia .social-icon {
+.socialmedia .social-list-item:hover, .socialmedia .social-list-item:focus {
+  background-color: #2196F3;
+}
+
+.socialmedia .social-list-item:last-child {
+  margin-right: 0px;
+}
+
+.socialmedia .social-list-item .social-icon {
   fill: #ffffff;
 }
 
 .button {
-  padding: 8px 10px 12px 29px;
   margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button .sendicon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
 }
 
 .subscription-call-form {
-  width: 355px;
+  width: 100%;
   height: 50px;
   background-color: #2f303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -977,71 +1001,13 @@ h2 {
   margin-top: 20px;
 }
 
-.sendicon {
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-  margin-left: 10px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts-social {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .social-footer {
-    display: block;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-container {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.footer-contact {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contact:hover, .footer-contact:focus {
-  color: #2196F3;
-}
-
-.footer-contact .social-media .social-list-item {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contact .social-media .social-list-item .social-icon:hover, .footer-contact .social-media .social-list-item .social-icon:focus {
-  background-color: #2196F3;
-}
-
-.footer-contact .social-media .social-list-item .social-icon:last-child {
-  margin-right: 0px;
-}
-
 .subscription-form-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.subscription-line {
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
 
 .subscription-call {
   margin-bottom: 0px;
-}
-
-.button {
-  margin-left: 26px;
 }
 
 .portfolio {
