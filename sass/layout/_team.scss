@@ -18,11 +18,17 @@
     margin-left:15px;
 
     @media screen and (max-width: $EndMobile){
-      width: 270px;
+      width: 100%;
+      margin-bottom: 30px;
+
+      &.last-child{
+        margin-bottom: 0px;
+      }
     }
   
     @media screen and (min-width: $tablet) and (max-width: $EndTablet){
     width: 354px;
+    
   }
 
   @media screen and (min-width: $desktop){

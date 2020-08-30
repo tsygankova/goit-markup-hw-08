@@ -812,7 +812,11 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .team-member {
-    width: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .team-member.last-child {
+    margin-bottom: 0px;
   }
 }
 
