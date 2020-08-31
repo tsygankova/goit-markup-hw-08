@@ -112,14 +112,18 @@
 }
 
 @media screen and (min-width: $tablet){
+
+  .filters{
+    justify-content: center;;
+  }
+
   .portfolio-items-list{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  }
   
   .portfolio-piece-container{
-    width: calc((100%-30px*4)/2);}}
+    width: calc(100%-60px)/2;}}}
 
 @media screen and (min-width: $desktop){
   .portfolio-piece-container{

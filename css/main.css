@@ -1277,13 +1277,16 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+  }
   .portfolio-items-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
-  .portfolio-piece-container {
-    width: calc((100%-30px*4)/2);
+  .portfolio-items-list .portfolio-piece-container {
+    width: calc(100%-60px)/2;
   }
 }
 
