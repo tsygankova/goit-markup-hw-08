@@ -1,7 +1,14 @@
 .portfolio{
     border-top: 1px solid $portfolio-border-color;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-left: auto;
     margin-right: auto;
+
+    .container{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
   
   .filters{
@@ -108,8 +115,7 @@
 }
 .portfolio-piece-container{
   width: calc(100%-30px);
-}
-}
+}}
 
 @media screen and (min-width: $tablet){
 
