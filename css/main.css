@@ -635,6 +635,16 @@ h2 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-container {
+    position: relative;
+  }
+  .header-contacts {
+    position: relative;
+    bottom: 13px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-contacts {
     flex-direction: row;
