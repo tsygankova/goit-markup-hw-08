@@ -1159,7 +1159,6 @@ h2 {
   }
   .subscription-form-container {
     display: flex;
-    width: 584px;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 80px;
@@ -1167,6 +1166,9 @@ h2 {
   .subscription-line {
     display: flex;
     align-items: center;
+  }
+  .subscription-line .subscription-call-form {
+    width: 100%;
   }
   .subscription-line .button {
     margin-left: 26px;
