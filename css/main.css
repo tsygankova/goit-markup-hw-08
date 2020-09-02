@@ -705,6 +705,7 @@ h2 {
 .hero-title {
   display: block;
   font-weight: 900;
+  font-size: 26px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -721,6 +722,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .hero-title {
+    font-size: 44px;
     padding-top: 200px;
   }
 }
@@ -1161,7 +1163,6 @@ h2 {
   .social-and-contacts {
     display: flex;
     justify-content: center;
-    margin-right: 94px;
   }
   .contacts-list {
     margin-bottom: 0px;
