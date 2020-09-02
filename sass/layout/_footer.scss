@@ -2,6 +2,8 @@
     background: $footer-color;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contacts-list{
@@ -118,13 +120,12 @@
  .footer-container{
      display: flex;
      align-items: flex-start;
-     justify-content: space-between;
 
  }
 
- .social-and-contacts{
+ .contacts-and-social{
      display: flex;
-     justify-content: center;
+     margin-right: 81px;
  }
 
  .contacts-list{
@@ -132,7 +133,7 @@
      text-align: left;
  }
  .contacts{
-     margin-right: 69px;
+     margin-right: 50px;
 
      .footer-logo{
          padding-bottom: 0px;
@@ -149,17 +150,18 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+
+    .subscription-call-form{
+        width: 320px;;
+    }
   }
   
   .subscription-line{
     display: flex;
-    align-items: center;
 
-    .subscription-call-form{
-        width: 150%
-    }
 
     .button{
         margin-left: 12px;
         margin-top: 20px;
+        margin-right: 50px;
     }}}
