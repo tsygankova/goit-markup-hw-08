@@ -114,16 +114,17 @@
 
 @media screen and (min-width: $desktop){
 
-// .footer{
-//     display: flex;
-//     justify-content: space-between;
-// }
 
  .footer-container{
      display: flex;
      align-items: flex-start;
      justify-content: space-between;
 
+ }
+
+ .social-and-contacts{
+     display: flex;
+     justify-content: center;
  }
 
  .contacts-list{
@@ -135,6 +136,12 @@
 
      .footer-logo{
          padding-bottom: 0px;
+     }
+ }
+
+ .social-footer{
+     .social-footer-list{
+         margin-bottom: 0px;
      }
  }
 
@@ -153,7 +160,6 @@
     }
 
     .button{
-        margin-left: 26px;
+        margin-left: 12px;
         margin-top: 20px;
-    }
-  }}
+    }}}

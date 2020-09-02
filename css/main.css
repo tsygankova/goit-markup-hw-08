@@ -1022,6 +1022,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .client {
     width: 170px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1157,6 +1158,11 @@ h2 {
     align-items: flex-start;
     justify-content: space-between;
   }
+  .social-and-contacts {
+    display: flex;
+    justify-content: center;
+    margin-right: 94px;
+  }
   .contacts-list {
     margin-bottom: 0px;
     text-align: left;
@@ -1166,6 +1172,9 @@ h2 {
   }
   .contacts .footer-logo {
     padding-bottom: 0px;
+  }
+  .social-footer .social-footer-list {
+    margin-bottom: 0px;
   }
   .subscription-form-container {
     display: flex;
@@ -1180,7 +1189,7 @@ h2 {
     width: 150%;
   }
   .subscription-line .button {
-    margin-left: 26px;
+    margin-left: 12px;
     margin-top: 20px;
   }
 }
