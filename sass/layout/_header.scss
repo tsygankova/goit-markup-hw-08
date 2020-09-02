@@ -1,5 +1,10 @@
+.header-section{
+    padding-left:15px;
+    padding-right: 15px;
+}
+
 .header-container{
-    padding-left: 15px;
+    padding-left:15px;
     padding-right: 15px;
     display: flex;
     justify-content: space-between;
@@ -211,5 +216,9 @@ line-height: 1.14;}
     .header-contact-link{
         font-size: 14px;
         line-height: 1.14;}  
+
+    .menu-wrapper{
+        border: none;
+    }
 }
 
