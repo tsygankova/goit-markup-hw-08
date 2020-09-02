@@ -102,25 +102,25 @@
             <div class = "portfolio-image-container">
               <picture class = "portfolio-image">
                 <source srcset = "../images/portfolio2/portfolio2_mob.jpg 1x, ../images/portfolio2/portfolio2_mobx2.jpg 2x" media = "(max-width: 767px)"/>
-                <source srcset = "../images/portfolio2/portfolio2_tablet.jpg 1x, ../images/portfolio2/portfolio2_tabletx2.jpg 2x" media = "(max-width: 1199px)"/>
-                <source srcset = "../images/portfolio2/portfolio2.jpg 1x, ../images/portfolio2/portfolio2_deskx2.jpg 2x" media = "(min-width: 1200px)"/>
+                <source srcset = "../images/portfolio2/portfolio2_tablet.jpg 1x, ../images/portfolio2/portfolio2_tabletx2.jpg 2x" media = "(min-width: 768px)"/>
+                <source srcset = "../images/portfolio2/portfolio2.jpg 1x, ../images/portfolio3/portfolio3_deskx2.jpg 2x" media = "(min-width: 1200px)"/>
                 <img  src = "../images/portfolio2/portfolio2.jpg" alt = "Постер New Orlean vs Golden Star">
               </picture>
               <p class = "portfolio-item-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
           </div>
           <div class = "portfolio-label-container">
-            <h2 class = "portfolio-item-title">Постер New Orlean vs Golden Star</h2>
-            <p class = "portfolio-item-text">Дизайн</p>
+            <h2 class = "portfolio-item-title">New Orlean vs Golden Star</h2>
+            <p class = "portfolio-item-text"> Дизайн</p>
           </div> 
           </a> 
-      </li>
+      </li> 
 
       <li class = "portfolio-piece">
         <a class = "portfolio-item link" href ="">
           <div class = "portfolio-image-container">
             <picture class = "portfolio-image">
               <source srcset = "../images/portfolio3/portfolio3_mob.jpg 1x, ../images/portfolio3/portfolio3_mobx2.jpg 2x" media = "(max-width: 767px)"/>
-              <source srcset = "../images/portfolio3/portfolio3_tablet.jpg 1x, ../images/portfolio3/portfolio3_tabletx2.jpg 2x" media = "(max-width: 199px)"/>
+              <source srcset = "../images/portfolio3/portfolio3_tablet.jpg 1x, ../images/portfolio3/portfolio3_tabletx2.jpg 2x" media = "(min-width: 768px)"/>
               <source srcset = "../images/portfolio3/portfolio3.jpg 1x, ../images/portfolio3/portfolio3_deskx2.jpg 2x" media = "(min-width: 1200px)"/>
               <img  src = "../images/portfolio3/portfolio3.jpg" alt = "Ресторан Seafood">
             </picture>
@@ -258,7 +258,7 @@
   
  <!--ФУТЕР-->
 
- <footer class = "footer section container">
+ <footer class = "footer section">
   <div class = "footer-container">
 
    <!-- ФУТЕР КОНТАКТЫ--> 
@@ -316,18 +316,18 @@
     <!--ФУТЕР ФОРМА РЕГИСТРАЦИИ-->
       
       <form class = "subscription-form">
-      <div class = "subscription-form-container">
-        <label class = "subscription-call" for = "email">Подпишитесь на рассылку</label>
-        <div class = "subscription-line">
-          <input class = "subscription-call-form" type = "email" name = "email" id = "email" placeholder = "E-mail">
-          <button class = "button" type = "submit">Подписаться
-          <svg class = "sendicon">
-            <use href = "./images/sprite.svg#icon-sendicon"></use>
-          </svg>
-          </button>
-        </div>
-      </div>
-    </form>
+          <div class = "subscription-form-container">
+            <label class = "subscription-call" for = "email">Подпишитесь на рассылку</label>
+            <div class = "subscription-line">
+              <input class = "subscription-call-form" type = "email" name = "email" id = "email" placeholder = "E-mail">
+              <button class = "button" type = "submit">Подписаться
+              <svg class = "sendicon">
+                <use href = "./images/sprite.svg#icon-sendicon"></use>
+              </svg>
+              </button>
+            </div>
+          </div>
+        </form>
 
   </div>
 </footer> 
