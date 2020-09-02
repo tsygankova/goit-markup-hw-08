@@ -440,10 +440,15 @@ h2 {
   }
 }
 
+.header-section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .header-container {
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
   position: relative;
 }
@@ -529,8 +534,8 @@ h2 {
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 3px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 104;
   }
@@ -645,6 +650,9 @@ h2 {
 }
 
 @media screen and (min-width: 1200px) {
+  .header-container {
+    justify-content: center;
+  }
   .header-contacts {
     flex-direction: row;
     margin-left: 305px;
@@ -656,6 +664,9 @@ h2 {
   .header-contact-link {
     font-size: 14px;
     line-height: 1.14;
+  }
+  .menu-wrapper {
+    border: none;
   }
 }
 
@@ -672,7 +683,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1199px) and (min-resolution: 2ddpx) {
+@media screen and (max-width: 1199x) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero_tabletx2.jpg);
     height: 400px;
@@ -687,7 +698,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-resolution: 2ddpx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero_desktopx2.jpg);
     max-width: 1600px;
@@ -1158,6 +1169,9 @@ h2 {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+  }
   .footer-container {
     display: flex;
     align-items: flex-start;
@@ -1315,7 +1329,7 @@ h2 {
     text-align: center;
   }
   .portfolio-piece-container {
-    width: calc(100%-30px);
+    width: 370px;
   }
 }
 
@@ -1329,13 +1343,13 @@ h2 {
     align-items: center;
   }
   .portfolio-items-list .portfolio-piece-container {
-    width: calc(100%-60px)/2;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-piece-container {
-    width: calc((100%-90px)/3);
+    width: 370px;
   }
 }
 /*# sourceMappingURL=main.css.map */
