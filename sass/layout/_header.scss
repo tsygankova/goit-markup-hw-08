@@ -2,8 +2,6 @@
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
     position: relative;}
 
@@ -198,6 +196,10 @@ line-height: 1.14;}
 }
 
 @media screen and (min-width: $desktop){
+
+    .header-container{
+        width: 1200px;
+    }
     .header-contacts{
         flex-direction: row;
     margin-left: 305px;}
