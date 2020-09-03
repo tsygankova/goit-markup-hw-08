@@ -519,6 +519,9 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .header-container .logo {
+    padding-top: 10px;
+  }
   .menu-wrapper {
     display: none;
     width: 100%;
@@ -650,6 +653,9 @@ h2 {
 @media screen and (min-width: 1200px) {
   .header-container {
     justify-content: center;
+  }
+  .header-container .logo {
+    margin-right: 81px;
   }
   .header-contacts {
     flex-direction: row;

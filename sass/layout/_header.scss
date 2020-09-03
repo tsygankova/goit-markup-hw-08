@@ -71,7 +71,11 @@
 
 .header-container{
     padding-top:10px;
-    padding-bottom:10px;}
+    padding-bottom:10px;
+
+.logo{
+    padding-top:10px;
+}}
 
 .menu-wrapper{
     display:none;
@@ -202,6 +206,10 @@ line-height: 1.14;}
 
     .header-container{
      justify-content: center;
+
+     .logo{
+         margin-right: 81px;
+     }
     }
     .header-contacts{
         flex-direction: row;
