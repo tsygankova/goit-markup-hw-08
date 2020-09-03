@@ -12,7 +12,6 @@
   .is-hidden{
     opacity:0;
     visibility: hidden;
-    pointer-events: none;
   }
   
   .form-section{
@@ -200,7 +199,7 @@
   height: 15px;
   fill: $background-color;
   margin-right: 10px;
-  border: #212121 solid 1px;
+  border: $title-light-theme-color solid 1px;
   transition-property: border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,7 +208,7 @@
   
   .checkbox:checked + .icon-check{
   fill: $background-color;
-  background-color:$accent-color;
+  background-color: $accent-color;
   border-color: $accent-color;
   }
   
